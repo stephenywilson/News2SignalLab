@@ -138,8 +138,7 @@ tr:hover td { background: var(--bg3); }
 .score-low  { color: var(--text-muted); font-weight: 500; }
 .disclaimer {
   background: var(--bg2);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--warn);
+  border: 1px solid var(--border-str);
   border-radius: 8px;
   padding: 14px 18px;
   font-size: 13px;
