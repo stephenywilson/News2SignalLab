@@ -5,123 +5,142 @@ from typing import Any
 
 CSS = """
 :root {
-  --bg: #080c12;
-  --bg2: #0d1320;
-  --bg3: #141c2e;
-  --border: #1c2840;
-  --text: #e2e8f0;
-  --text-muted: #64748b;
-  --accent: #00d97e;
-  --accent2: #10b981;
-  --warn: #ef4444;
-  --amber: #f59e0b;
-  --tag-bg: #141c2e;
+  --bg:           #05070A;
+  --bg2:          #0A0F14;
+  --bg3:          #0D1319;
+  --border:       rgba(126, 151, 160, 0.14);
+  --border-str:   rgba(126, 151, 160, 0.22);
+  --text:         #E8EEF2;
+  --text-dim:     #A5B4BD;
+  --text-muted:   #70818C;
+  --text-faint:   #4F5C61;
+  --accent:       #19D6B0;
+  --accent-soft:  #30E2BF;
+  --warn:         #E26A6A;
+  --risk:         #D8B34B;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
 a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: underline; color: var(--accent-soft); }
 header {
   background: var(--bg2);
-  border-bottom: 2px solid var(--border);
-  padding: 16px 32px;
+  border-bottom: 1px solid var(--border-str);
+  padding: 14px 32px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
-header .logo { font-size: 1.2rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+header .logo { font-size: 1.15rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
 header .logo span { color: var(--accent); }
 header nav { margin-left: auto; display: flex; gap: 24px; }
-header nav a { color: var(--text-muted); font-size: 14px; }
+header nav a { color: var(--text-muted); font-size: 13px; letter-spacing: 0.01em; }
 header nav a:hover { color: var(--text); text-decoration: none; }
 .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
-h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
-h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; color: var(--text); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; color: var(--text-muted); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 8px; }
-p { color: var(--text-muted); margin-bottom: 12px; }
-.subtitle { font-size: 1rem; color: var(--text-muted); margin-bottom: 32px; }
+h1 { font-size: 1.85rem; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.02em; }
+h2 {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin: 32px 0 16px;
+}
+h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+p { color: var(--text-dim); margin-bottom: 12px; }
+.subtitle { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 32px; }
 .badge {
   display: inline-block;
-  background: var(--tag-bg);
+  background: var(--bg3);
   border: 1px solid var(--border);
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 2px 8px;
-  font-size: 11px;
+  font-size: 10px;
+  font-weight: 500;
   color: var(--text-muted);
   margin-right: 6px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
-.badge.green { color: var(--accent); border-color: var(--accent); }
-.badge.blue { color: var(--accent); border-color: var(--accent); }
+.badge.green { color: var(--accent); border-color: rgba(25, 214, 176, 0.35); background: rgba(25, 214, 176, 0.06); }
+.badge.blue  { color: var(--accent); border-color: rgba(25, 214, 176, 0.35); background: rgba(25, 214, 176, 0.06); }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1px;
+  gap: 12px;
   margin-bottom: 32px;
-  border: 1px solid var(--border);
-  background: var(--border);
 }
 .card {
   background: var(--bg2);
-  border: none;
-  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
 }
-.card .label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-.card .value { font-size: 2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
-.card .sub { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
-.links { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+.card .label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 10px;
+}
+.card .value { font-size: 28px; font-weight: 600; color: var(--accent); letter-spacing: -0.02em; line-height: 1.1; }
+.card .sub { font-size: 12px; color: var(--text-faint); margin-top: 4px; }
+.links { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
 .links a {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: 2px;
-  padding: 9px 18px;
-  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 18px;
+  color: var(--text-dim);
   font-size: 13px;
   font-weight: 500;
 }
-.links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.links a:hover { border-color: rgba(25, 214, 176, 0.35); color: var(--accent); text-decoration: none; }
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
   margin-bottom: 24px;
   border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
 }
 th {
   background: var(--bg3);
-  border-bottom: 1px solid var(--border);
-  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-str);
   padding: 9px 14px;
   text-align: left;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
   color: var(--text-muted);
-  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.18em;
 }
 td {
   border-bottom: 1px solid var(--border);
-  border-right: 1px solid var(--border);
-  padding: 10px 14px;
+  padding: 11px 14px;
   color: var(--text);
 }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg3); }
-.rank { font-weight: 700; color: var(--text-muted); }
+.rank { font-weight: 600; color: var(--text-faint); }
 .score-high { color: var(--accent); font-weight: 700; }
-.score-mid { color: var(--amber); font-weight: 600; }
-.score-low { color: var(--text-muted); font-weight: 500; }
+.score-mid  { color: var(--risk);   font-weight: 600; }
+.score-low  { color: var(--text-muted); font-weight: 500; }
 .disclaimer {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--warn);
-  border-radius: 0;
+  border-left: 2px solid var(--warn);
+  border-radius: 8px;
   padding: 14px 18px;
   font-size: 13px;
   color: var(--text-muted);
@@ -130,26 +149,25 @@ tr:hover td { background: var(--bg3); }
 .stream-event {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--border);
-  border-radius: 0;
-  padding: 16px;
-  margin-bottom: 1px;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 8px;
 }
-.stream-event:hover { border-left-color: var(--accent); }
-.stream-event .evt-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
-.stream-event .evt-title { font-weight: 600; color: var(--text); }
+.stream-event:hover { border-color: var(--border-str); }
+.stream-event .evt-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.stream-event .evt-title { font-weight: 600; color: var(--text); font-size: 14px; }
 .stream-event .evt-meta { font-size: 12px; color: var(--text-muted); }
 .dir-bullish { color: var(--accent); }
 .dir-bearish { color: var(--warn); }
 .dir-neutral { color: var(--text-muted); }
-.dir-mixed { color: var(--amber); }
+.dir-mixed   { color: var(--risk); }
 footer {
   border-top: 1px solid var(--border);
   padding: 20px 32px;
   text-align: center;
   font-size: 12px;
-  color: var(--text-muted);
-  margin-top: 48px;
+  color: var(--text-faint);
+  margin-top: 56px;
 }
 """.strip()
 
