@@ -209,8 +209,7 @@ def _wrap(title: str, body: str, current: str = "") -> str:
 {body}
 </div>
 <footer>
-  News2SignalLab v0.1.0 &mdash; &copy; 2024-2026 Catalayer AI &mdash; Apache-2.0<br>
-  Research only. Synthetic demo data. Not financial advice.
+  News2SignalLab v0.1.0 &mdash; &copy; 2024-2026 Catalayer AI &mdash; Apache-2.0
 </footer>
 </body>
 </html>"""
