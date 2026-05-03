@@ -2,228 +2,251 @@
      xmlns="http://www.w3.org/2000/svg"
      font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
 
-  <!-- ── GLOBAL BACKGROUND ── -->
-  <rect width="1100" height="620" fill="#0d1117"/>
+  <!-- ── BACKGROUND ── -->
+  <rect width="1100" height="620" fill="#080c12"/>
 
-  <!-- ── HEADER BAR ── -->
-  <rect width="1100" height="60" fill="#161b22"/>
-  <rect y="60" width="1100" height="1" fill="#30363d"/>
+  <!-- subtle horizontal rule grid (very restrained) -->
+  <line x1="0" y1="155" x2="1100" y2="155" stroke="#0f1522" stroke-width="1"/>
+  <line x1="0" y1="310" x2="1100" y2="310" stroke="#0f1522" stroke-width="1"/>
+  <line x1="0" y1="465" x2="1100" y2="465" stroke="#0f1522" stroke-width="1"/>
+
+  <!-- ── HEADER ── -->
+  <rect width="1100" height="58" fill="#0d1320"/>
+  <rect y="58" width="1100" height="2" fill="#1c2840"/>
+
+  <!-- Left accent bar on header -->
+  <rect y="0" width="3" height="58" fill="#00d97e"/>
 
   <!-- Logo -->
-  <text x="28" y="38" font-size="22" font-weight="700">
-    <tspan fill="#e6edf3">News2Signal</tspan><tspan fill="#58a6ff">Lab</tspan>
+  <text x="22" y="36" font-size="20" font-weight="700" letter-spacing="-0.01em">
+    <tspan fill="#e2e8f0">News2Signal</tspan><tspan fill="#00d97e">Lab</tspan>
   </text>
-  <text x="28" y="53" font-size="11" fill="#8b949e">Complete local lab for financial news-to-signal evaluation · by Catalayer AI</text>
+  <text x="22" y="51" font-size="10" fill="#64748b" letter-spacing="0.04em">COMPLETE LOCAL LAB · FINANCIAL NEWS-TO-SIGNAL EVALUATION · BY CATALAYER AI</text>
 
-  <!-- Badges (top-right) -->
-  <rect x="890" y="14" width="62" height="24" rx="4" fill="#1f2937" stroke="#30363d" stroke-width="1"/>
-  <text x="921" y="31" font-size="11" fill="#58a6ff" text-anchor="middle">v0.1.0</text>
+  <!-- Right badges -->
+  <rect x="892" y="16" width="58" height="20" fill="#141c2e" stroke="#1c2840" stroke-width="1"/>
+  <text x="921" y="30" font-size="10" fill="#00d97e" text-anchor="middle" letter-spacing="0.03em">v0.1.0</text>
 
-  <rect x="962" y="14" width="92" height="24" rx="4" fill="#1f2937" stroke="#30363d" stroke-width="1"/>
-  <text x="1008" y="31" font-size="11" fill="#3fb950" text-anchor="middle">Apache-2.0</text>
+  <rect x="960" y="16" width="96" height="20" fill="#141c2e" stroke="#1c2840" stroke-width="1"/>
+  <text x="1008" y="30" font-size="10" fill="#10b981" text-anchor="middle" letter-spacing="0.03em">Apache-2.0</text>
 
   <!-- ── LEFT PANEL — CLI PIPELINE ── -->
-  <rect x="14" y="68" width="295" height="492" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
-  <text x="30" y="88" font-size="10" font-weight="600" fill="#8b949e" letter-spacing="0.06em">CLI PIPELINE</text>
+  <rect x="14" y="66" width="295" height="498" fill="#0d1320" stroke="#1c2840" stroke-width="1"/>
+  <!-- Top accent line on panel -->
+  <rect x="14" y="66" width="295" height="2" fill="#1c2840"/>
 
-  <!-- Step 1: Dataset -->
-  <rect x="28" y="96" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="96" width="4" height="44" rx="2" fill="#58a6ff"/>
-  <text x="44" y="113" font-size="12" font-weight="600" fill="#e6edf3">Dataset</text>
-  <text x="44" y="130" font-size="10" fill="#8b949e">datasets/demo.jsonl · 32 rows · 9 event types</text>
+  <text x="28" y="86" font-size="9" font-weight="600" fill="#64748b" letter-spacing="0.1em">CLI PIPELINE</text>
 
-  <!-- Arrow 1→2 -->
-  <line x1="160" y1="140" x2="160" y2="149" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="155,148 165,148 160,156" fill="#30363d"/>
+  <!-- Step boxes: x=28, w=267 -->
 
-  <!-- Step 2: Predictions -->
-  <rect x="28" y="158" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="158" width="4" height="44" rx="2" fill="#58a6ff"/>
-  <text x="44" y="175" font-size="12" font-weight="600" fill="#e6edf3">Predictions</text>
-  <text x="44" y="192" font-size="10" fill="#8b949e">3 example files · oracle / noisy / simple</text>
+  <!-- Step 1 -->
+  <rect x="28" y="94" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="94" width="3" height="44" fill="#00d97e"/>
+  <text x="43" y="111" font-size="12" font-weight="600" fill="#e2e8f0">Dataset</text>
+  <text x="43" y="128" font-size="10" fill="#64748b">datasets/demo.jsonl · 32 rows · 9 types</text>
 
-  <!-- Arrow 2→3 -->
-  <line x1="160" y1="202" x2="160" y2="211" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="155,210 165,210 160,218" fill="#30363d"/>
+  <!-- Arrow -->
+  <line x1="162" y1="138" x2="162" y2="148" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="157,147 167,147 162,155" fill="#1c2840"/>
 
-  <!-- Step 3: Scoring -->
-  <rect x="28" y="220" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="220" width="4" height="44" rx="2" fill="#3fb950"/>
-  <text x="44" y="237" font-size="12" font-weight="600" fill="#e6edf3">Scoring</text>
-  <text x="44" y="254" font-size="10" fill="#8b949e">direction · event type · asset · time horizon</text>
+  <!-- Step 2 -->
+  <rect x="28" y="157" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="157" width="3" height="44" fill="#00d97e"/>
+  <text x="43" y="174" font-size="12" font-weight="600" fill="#e2e8f0">Predictions</text>
+  <text x="43" y="191" font-size="10" fill="#64748b">3 example files · oracle / noisy / simple</text>
 
-  <!-- Arrow 3→4 -->
-  <line x1="160" y1="264" x2="160" y2="273" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="155,272 165,272 160,280" fill="#30363d"/>
+  <!-- Arrow -->
+  <line x1="162" y1="201" x2="162" y2="211" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="157,210 167,210 162,218" fill="#1c2840"/>
 
-  <!-- Step 4: Reports -->
-  <rect x="28" y="282" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="282" width="4" height="44" rx="2" fill="#3fb950"/>
-  <text x="44" y="299" font-size="12" font-weight="600" fill="#e6edf3">Reports</text>
-  <text x="44" y="316" font-size="10" fill="#8b949e">Markdown + HTML · failed example analysis</text>
+  <!-- Step 3 -->
+  <rect x="28" y="220" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="220" width="3" height="44" fill="#00d97e"/>
+  <text x="43" y="237" font-size="12" font-weight="600" fill="#e2e8f0">Scoring</text>
+  <text x="43" y="254" font-size="10" fill="#64748b">direction · event type · asset · horizon</text>
 
-  <!-- Arrow 4→5 -->
-  <line x1="160" y1="326" x2="160" y2="335" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="155,334 165,334 160,342" fill="#30363d"/>
+  <!-- Arrow -->
+  <line x1="162" y1="264" x2="162" y2="274" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="157,273 167,273 162,281" fill="#1c2840"/>
 
-  <!-- Step 5: Leaderboard -->
-  <rect x="28" y="344" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="344" width="4" height="44" rx="2" fill="#e3b341"/>
-  <text x="44" y="361" font-size="12" font-weight="600" fill="#e6edf3">Leaderboard</text>
-  <text x="44" y="378" font-size="10" fill="#8b949e">static HTML site · ranked by overall score</text>
+  <!-- Step 4 -->
+  <rect x="28" y="283" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="283" width="3" height="44" fill="#00d97e"/>
+  <text x="43" y="300" font-size="12" font-weight="600" fill="#e2e8f0">Reports</text>
+  <text x="43" y="317" font-size="10" fill="#64748b">Markdown + HTML · failed example detail</text>
 
-  <!-- Arrow 5→6 -->
-  <line x1="160" y1="388" x2="160" y2="397" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="155,396 165,396 160,404" fill="#30363d"/>
+  <!-- Arrow -->
+  <line x1="162" y1="327" x2="162" y2="337" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="157,336 167,336 162,344" fill="#1c2840"/>
 
-  <!-- Step 6: Synthetic Streams -->
-  <rect x="28" y="406" width="263" height="44" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="28" y="406" width="4" height="44" rx="2" fill="#a371f7"/>
-  <text x="44" y="423" font-size="12" font-weight="600" fill="#e6edf3">Synthetic Streams</text>
-  <text x="44" y="440" font-size="10" fill="#8b949e">5 scenarios · fed / cpi / earnings / crypto</text>
+  <!-- Step 5 -->
+  <rect x="28" y="346" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="346" width="3" height="44" fill="#f59e0b"/>
+  <text x="43" y="363" font-size="12" font-weight="600" fill="#e2e8f0">Leaderboard</text>
+  <text x="43" y="380" font-size="10" fill="#64748b">static HTML site · no server required</text>
 
-  <!-- CLI command pill -->
-  <rect x="28" y="462" width="263" height="30" rx="4" fill="#0d1117" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4,2"/>
-  <text x="160" y="482" font-size="12" font-weight="700" fill="#58a6ff" text-anchor="middle">$ news2signallab demo</text>
+  <!-- Arrow -->
+  <line x1="162" y1="390" x2="162" y2="400" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="157,399 167,399 162,407" fill="#1c2840"/>
 
-  <!-- "offline · no API keys" note -->
-  <text x="160" y="514" font-size="10" fill="#8b949e" text-anchor="middle">zero dependencies · zero API keys · fully offline</text>
+  <!-- Step 6 -->
+  <rect x="28" y="409" width="267" height="44" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="28" y="409" width="3" height="44" fill="#7c6af7"/>
+  <text x="43" y="426" font-size="12" font-weight="600" fill="#e2e8f0">Synthetic Streams</text>
+  <text x="43" y="443" font-size="10" fill="#64748b">5 scenarios · fed / cpi / earnings / crypto</text>
+
+  <!-- Command box -->
+  <rect x="28" y="466" width="267" height="28" fill="#080c12" stroke="#00d97e" stroke-width="1"/>
+  <text x="162" y="484" font-size="11" font-weight="700" fill="#00d97e" text-anchor="middle" letter-spacing="0.02em">$ news2signallab demo</text>
+
+  <!-- Bottom note -->
+  <text x="162" y="516" font-size="9" fill="#64748b" text-anchor="middle" letter-spacing="0.03em">ZERO DEPS · ZERO API KEYS · FULLY LOCAL</text>
 
   <!-- ── RIGHT PANEL ── -->
-  <rect x="323" y="68" width="763" height="492" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <rect x="323" y="66" width="763" height="498" fill="#0d1320" stroke="#1c2840" stroke-width="1"/>
+  <rect x="323" y="66" width="763" height="2" fill="#1c2840"/>
 
-  <!-- === LEADERBOARD SECTION === -->
-  <text x="339" y="88" font-size="10" font-weight="600" fill="#8b949e" letter-spacing="0.06em">DEMO LEADERBOARD</text>
-  <text x="339" y="103" font-size="10" fill="#8b949e">sample demo baselines only — not official real-model benchmark results</text>
+  <!-- === LEADERBOARD === -->
+  <text x="339" y="86" font-size="9" font-weight="600" fill="#64748b" letter-spacing="0.1em">DEMO LEADERBOARD</text>
+  <text x="339" y="101" font-size="9" fill="#64748b">sample baselines only — not real model benchmark results</text>
 
-  <!-- Table header row -->
-  <rect x="323" y="110" width="763" height="28" rx="0" fill="#21262d"/>
-  <!-- column header texts -->
-  <text x="341" y="128" font-size="10" font-weight="700" fill="#8b949e">RANK</text>
-  <text x="381" y="128" font-size="10" font-weight="700" fill="#8b949e">MODEL</text>
-  <text x="557" y="128" font-size="10" font-weight="700" fill="#8b949e">OVERALL</text>
-  <text x="631" y="128" font-size="10" font-weight="700" fill="#8b949e">DIRECTION</text>
-  <text x="711" y="128" font-size="10" font-weight="700" fill="#8b949e">EVENT</text>
-  <text x="779" y="128" font-size="10" font-weight="700" fill="#8b949e">ASSET</text>
-  <text x="847" y="128" font-size="10" font-weight="700" fill="#8b949e">HORIZON</text>
-  <text x="921" y="128" font-size="10" font-weight="700" fill="#8b949e">NOTES</text>
+  <!-- Table header -->
+  <rect x="323" y="108" width="763" height="26" fill="#141c2e"/>
+  <line x1="323" y1="134" x2="1086" y2="134" stroke="#1c2840" stroke-width="1"/>
 
-  <!-- Row 1: oracle-baseline -->
-  <rect x="323" y="138" width="763" height="36" fill="#0d1117"/>
-  <text x="349" y="161" font-size="12" font-weight="700" fill="#8b949e" text-anchor="middle">1</text>
-  <text x="381" y="161" font-size="12" fill="#e6edf3">oracle-baseline</text>
-  <text x="557" y="161" font-size="13" font-weight="700" fill="#3fb950">97.7%</text>
-  <text x="631" y="161" font-size="12" fill="#e6edf3">96.9%</text>
-  <text x="711" y="161" font-size="12" fill="#e6edf3">100.0%</text>
-  <text x="779" y="161" font-size="12" fill="#e6edf3">100.0%</text>
-  <text x="847" y="161" font-size="12" fill="#e6edf3">93.8%</text>
-  <text x="921" y="161" font-size="10" fill="#8b949e">demo upper bound</text>
-  <line x1="323" y1="174" x2="1086" y2="174" stroke="#30363d" stroke-width="1"/>
+  <!-- Column labels -->
+  <text x="341" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">RANK</text>
+  <text x="381" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">MODEL</text>
+  <text x="557" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">OVERALL</text>
+  <text x="631" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">DIRECTION</text>
+  <text x="711" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">EVENT</text>
+  <text x="779" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">ASSET</text>
+  <text x="847" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">HORIZON</text>
+  <text x="921" y="125" font-size="9" font-weight="700" fill="#64748b" letter-spacing="0.06em">NOTE</text>
 
-  <!-- Row 2: noisy-local-model -->
-  <rect x="323" y="174" width="763" height="36" fill="#161b22"/>
-  <text x="349" y="197" font-size="12" font-weight="700" fill="#8b949e" text-anchor="middle">2</text>
-  <text x="381" y="197" font-size="12" fill="#e6edf3">noisy-local-model</text>
-  <text x="557" y="197" font-size="13" font-weight="700" fill="#58a6ff">78.1%</text>
-  <text x="631" y="197" font-size="12" fill="#e6edf3">75.0%</text>
-  <text x="711" y="197" font-size="12" fill="#e6edf3">81.2%</text>
-  <text x="779" y="197" font-size="12" fill="#e6edf3">87.5%</text>
-  <text x="847" y="197" font-size="12" fill="#e6edf3">68.8%</text>
-  <text x="921" y="197" font-size="10" fill="#8b949e">sample demo system</text>
-  <line x1="323" y1="210" x2="1086" y2="210" stroke="#30363d" stroke-width="1"/>
+  <!-- Row 1: oracle -->
+  <rect x="323" y="134" width="763" height="34" fill="#080c12"/>
+  <text x="349" y="156" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">1</text>
+  <text x="381" y="156" font-size="12" fill="#e2e8f0">oracle-baseline</text>
+  <text x="557" y="156" font-size="13" font-weight="700" fill="#00d97e">97.7%</text>
+  <text x="631" y="156" font-size="12" fill="#e2e8f0">96.9%</text>
+  <text x="711" y="156" font-size="12" fill="#e2e8f0">100.0%</text>
+  <text x="779" y="156" font-size="12" fill="#e2e8f0">100.0%</text>
+  <text x="847" y="156" font-size="12" fill="#e2e8f0">93.8%</text>
+  <text x="921" y="156" font-size="9" fill="#64748b">demo upper bound</text>
+  <line x1="323" y1="168" x2="1086" y2="168" stroke="#1c2840" stroke-width="1"/>
 
-  <!-- Row 3: simple-baseline -->
-  <rect x="323" y="210" width="763" height="36" fill="#0d1117"/>
-  <text x="349" y="233" font-size="12" font-weight="700" fill="#8b949e" text-anchor="middle">3</text>
-  <text x="381" y="233" font-size="12" fill="#e6edf3">simple-baseline</text>
-  <text x="557" y="233" font-size="13" font-weight="700" fill="#e3b341">62.5%</text>
-  <text x="631" y="233" font-size="12" fill="#e6edf3">59.4%</text>
-  <text x="711" y="233" font-size="12" fill="#e6edf3">62.5%</text>
-  <text x="779" y="233" font-size="12" fill="#e6edf3">78.1%</text>
-  <text x="847" y="233" font-size="12" fill="#e6edf3">50.0%</text>
-  <text x="921" y="233" font-size="10" fill="#8b949e">keyword heuristic</text>
-  <line x1="323" y1="246" x2="1086" y2="246" stroke="#30363d" stroke-width="1"/>
+  <!-- Row 2: noisy -->
+  <rect x="323" y="168" width="763" height="34" fill="#0d1320"/>
+  <text x="349" y="190" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">2</text>
+  <text x="381" y="190" font-size="12" fill="#e2e8f0">noisy-local-model</text>
+  <text x="557" y="190" font-size="13" font-weight="700" fill="#f59e0b">78.1%</text>
+  <text x="631" y="190" font-size="12" fill="#e2e8f0">75.0%</text>
+  <text x="711" y="190" font-size="12" fill="#e2e8f0">81.2%</text>
+  <text x="779" y="190" font-size="12" fill="#e2e8f0">87.5%</text>
+  <text x="847" y="190" font-size="12" fill="#e2e8f0">68.8%</text>
+  <text x="921" y="190" font-size="9" fill="#64748b">sample demo</text>
+  <line x1="323" y1="202" x2="1086" y2="202" stroke="#1c2840" stroke-width="1"/>
+
+  <!-- Row 3: simple -->
+  <rect x="323" y="202" width="763" height="34" fill="#080c12"/>
+  <text x="349" y="224" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">3</text>
+  <text x="381" y="224" font-size="12" fill="#e2e8f0">simple-baseline</text>
+  <text x="557" y="224" font-size="13" font-weight="700" fill="#94a3b8">62.5%</text>
+  <text x="631" y="224" font-size="12" fill="#e2e8f0">59.4%</text>
+  <text x="711" y="224" font-size="12" fill="#e2e8f0">62.5%</text>
+  <text x="779" y="224" font-size="12" fill="#e2e8f0">78.1%</text>
+  <text x="847" y="224" font-size="12" fill="#e2e8f0">50.0%</text>
+  <text x="921" y="224" font-size="9" fill="#64748b">keyword heuristic</text>
 
   <!-- Table outer border -->
-  <rect x="323" y="110" width="763" height="136" fill="none" stroke="#30363d" stroke-width="1"/>
+  <rect x="323" y="108" width="763" height="128" fill="none" stroke="#1c2840" stroke-width="1"/>
 
-  <!-- === STATS CARDS === -->
-  <line x1="339" y1="260" x2="1070" y2="260" stroke="#30363d" stroke-width="1" stroke-dasharray="2,3"/>
-  <text x="339" y="276" font-size="10" font-weight="600" fill="#8b949e" letter-spacing="0.06em">BENCHMARK STATS</text>
+  <!-- === STATS === -->
+  <line x1="339" y1="250" x2="1070" y2="250" stroke="#1c2840" stroke-width="1"/>
+  <text x="339" y="267" font-size="9" font-weight="600" fill="#64748b" letter-spacing="0.1em">BENCHMARK STATS</text>
 
-  <!-- Card 1: Dataset Rows -->
-  <rect x="339" y="284" width="176" height="76" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="355" y="302" font-size="10" fill="#8b949e">Dataset Rows</text>
-  <text x="355" y="340" font-size="34" font-weight="700" fill="#58a6ff">32</text>
-  <text x="355" y="355" font-size="10" fill="#8b949e">demo.jsonl</text>
+  <!-- 4 stat cards using grid-line separator approach -->
+  <rect x="339" y="275" width="728" height="72" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
 
-  <!-- Card 2: Event Types -->
-  <rect x="523" y="284" width="176" height="76" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="539" y="302" font-size="10" fill="#8b949e">Event Types</text>
-  <text x="539" y="340" font-size="34" font-weight="700" fill="#58a6ff">9</text>
-  <text x="539" y="355" font-size="10" fill="#8b949e">earnings, inflation …</text>
+  <!-- dividers between cards -->
+  <line x1="521" y1="275" x2="521" y2="347" stroke="#1c2840" stroke-width="1"/>
+  <line x1="703" y1="275" x2="703" y2="347" stroke="#1c2840" stroke-width="1"/>
+  <line x1="885" y1="275" x2="885" y2="347" stroke="#1c2840" stroke-width="1"/>
 
-  <!-- Card 3: Assets -->
-  <rect x="707" y="284" width="176" height="76" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="723" y="302" font-size="10" fill="#8b949e">Assets Covered</text>
-  <text x="723" y="340" font-size="34" font-weight="700" fill="#58a6ff">10</text>
-  <text x="723" y="355" font-size="10" fill="#8b949e">SPY, BTC, AAPL …</text>
+  <!-- Card 1 -->
+  <text x="355" y="293" font-size="9" fill="#64748b" letter-spacing="0.06em">DATASET ROWS</text>
+  <text x="355" y="329" font-size="30" font-weight="700" fill="#00d97e" letter-spacing="-0.03em">32</text>
+  <text x="355" y="343" font-size="9" fill="#64748b">demo.jsonl</text>
 
-  <!-- Card 4: API Keys -->
-  <rect x="891" y="284" width="176" height="76" rx="5" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="907" y="302" font-size="10" fill="#8b949e">API Keys Required</text>
-  <text x="907" y="340" font-size="34" font-weight="700" fill="#3fb950">0</text>
-  <text x="907" y="355" font-size="10" fill="#8b949e">fully offline</text>
+  <!-- Card 2 -->
+  <text x="537" y="293" font-size="9" fill="#64748b" letter-spacing="0.06em">EVENT TYPES</text>
+  <text x="537" y="329" font-size="30" font-weight="700" fill="#00d97e" letter-spacing="-0.03em">9</text>
+  <text x="537" y="343" font-size="9" fill="#64748b">earnings, inflation …</text>
 
-  <!-- === ECOSYSTEM SECTION === -->
-  <line x1="339" y1="374" x2="1070" y2="374" stroke="#30363d" stroke-width="1" stroke-dasharray="2,3"/>
-  <text x="339" y="390" font-size="10" font-weight="600" fill="#8b949e" letter-spacing="0.06em">ECOSYSTEM</text>
+  <!-- Card 3 -->
+  <text x="719" y="293" font-size="9" fill="#64748b" letter-spacing="0.06em">ASSETS COVERED</text>
+  <text x="719" y="329" font-size="30" font-weight="700" fill="#00d97e" letter-spacing="-0.03em">10</text>
+  <text x="719" y="343" font-size="9" fill="#64748b">SPY, BTC, AAPL …</text>
 
-  <!-- Box 1: News2SignalBench -->
-  <rect x="339" y="398" width="196" height="72" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="355" y="416" font-size="11" font-weight="600" fill="#e6edf3">News2SignalBench</text>
-  <text x="355" y="432" font-size="10" fill="#8b949e">Benchmark foundation</text>
-  <text x="355" y="447" font-size="10" fill="#8b949e">dataset format + contracts</text>
-  <text x="355" y="462" font-size="10" fill="#8b949e">evaluation task definition</text>
+  <!-- Card 4 -->
+  <text x="901" y="293" font-size="9" fill="#64748b" letter-spacing="0.06em">API KEYS REQUIRED</text>
+  <text x="901" y="329" font-size="30" font-weight="700" fill="#00d97e" letter-spacing="-0.03em">0</text>
+  <text x="901" y="343" font-size="9" fill="#64748b">fully offline</text>
+
+  <!-- === ECOSYSTEM === -->
+  <line x1="339" y1="361" x2="1070" y2="361" stroke="#1c2840" stroke-width="1"/>
+  <text x="339" y="378" font-size="9" font-weight="600" fill="#64748b" letter-spacing="0.1em">ECOSYSTEM</text>
+
+  <!-- Eco box 1: News2SignalBench -->
+  <rect x="339" y="386" width="196" height="68" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <text x="355" y="404" font-size="11" font-weight="600" fill="#e2e8f0">News2SignalBench</text>
+  <text x="355" y="420" font-size="10" fill="#64748b">Benchmark foundation</text>
+  <text x="355" y="435" font-size="10" fill="#64748b">dataset format + contracts</text>
+  <text x="355" y="447" font-size="9" fill="#64748b">evaluation task definition</text>
 
   <!-- Arrow 1 -->
-  <line x1="539" y1="434" x2="553" y2="434" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="550,429 558,434 550,439" fill="#30363d"/>
+  <line x1="539" y1="420" x2="553" y2="420" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="550,415 558,420 550,425" fill="#1c2840"/>
 
-  <!-- Box 2: SignalEvalRunner -->
-  <rect x="562" y="398" width="196" height="72" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <text x="578" y="416" font-size="11" font-weight="600" fill="#e6edf3">SignalEvalRunner</text>
-  <text x="578" y="432" font-size="10" fill="#8b949e">Standalone runner</text>
-  <text x="578" y="447" font-size="10" fill="#8b949e">scoring primitives</text>
-  <text x="578" y="462" font-size="10" fill="#8b949e">embeddable in any pipeline</text>
+  <!-- Eco box 2: SignalEvalRunner -->
+  <rect x="562" y="386" width="196" height="68" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <text x="578" y="404" font-size="11" font-weight="600" fill="#e2e8f0">SignalEvalRunner</text>
+  <text x="578" y="420" font-size="10" fill="#64748b">Standalone runner</text>
+  <text x="578" y="435" font-size="10" fill="#64748b">scoring primitives</text>
+  <text x="578" y="447" font-size="9" fill="#64748b">embeddable in any pipeline</text>
 
   <!-- Arrow 2 -->
-  <line x1="762" y1="434" x2="776" y2="434" stroke="#30363d" stroke-width="1.5"/>
-  <polygon points="773,429 781,434 773,439" fill="#30363d"/>
+  <line x1="762" y1="420" x2="776" y2="420" stroke="#1c2840" stroke-width="1.5"/>
+  <polygon points="773,415 781,420 773,425" fill="#1c2840"/>
 
-  <!-- Box 3: News2SignalLab (highlighted - this project) -->
-  <rect x="785" y="398" width="260" height="72" rx="4" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
-  <text x="801" y="416" font-size="11" font-weight="700" fill="#58a6ff">News2SignalLab</text>
-  <text x="960" y="416" font-size="9" fill="#3fb950">← this project</text>
-  <text x="801" y="432" font-size="10" fill="#8b949e">Complete integrated lab</text>
-  <text x="801" y="447" font-size="10" fill="#8b949e">demo · validate · score · report</text>
-  <text x="801" y="462" font-size="10" fill="#8b949e">board · stream · all-in-one CLI</text>
+  <!-- Eco box 3: News2SignalLab (highlighted) -->
+  <rect x="785" y="386" width="252" height="68" fill="#0d1f16" stroke="#00d97e" stroke-width="1.5"/>
+  <!-- green top accent -->
+  <rect x="785" y="386" width="252" height="2" fill="#00d97e"/>
+  <text x="801" y="405" font-size="11" font-weight="700" fill="#00d97e">News2SignalLab</text>
+  <text x="966" y="405" font-size="9" fill="#10b981">← this project</text>
+  <text x="801" y="421" font-size="10" fill="#94a3b8">Complete integrated lab</text>
+  <text x="801" y="436" font-size="10" fill="#94a3b8">demo · validate · score · report</text>
+  <text x="801" y="448" font-size="9" fill="#64748b">board · stream · all-in-one CLI</text>
 
-  <!-- === DISCLAIMER SECTION === -->
-  <rect x="323" y="484" width="763" height="64" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="323" y="484" width="4" height="64" rx="2" fill="#f85149"/>
-  <text x="339" y="502" font-size="10" font-weight="700" fill="#f85149">IMPORTANT DISCLAIMER</text>
-  <text x="339" y="518" font-size="10" fill="#8b949e">All data is synthetic and for evaluation research only. Not financial advice. No real news. No trading execution.</text>
-  <text x="339" y="533" font-size="10" fill="#8b949e">oracle-baseline, noisy-local-model, simple-baseline are demo/sample baselines — not official real-model results.</text>
-  <text x="339" y="548" font-size="10" fill="#8b949e">No API keys required. No external model calls. No paid data sources. Fully local and reproducible.</text>
+  <!-- === DISCLAIMER BOX === -->
+  <rect x="323" y="468" width="763" height="84" fill="#080c12" stroke="#1c2840" stroke-width="1"/>
+  <rect x="323" y="468" width="3" height="84" fill="#ef4444"/>
+  <text x="339" y="485" font-size="9" font-weight="700" fill="#ef4444" letter-spacing="0.08em">DISCLAIMER</text>
+  <text x="339" y="501" font-size="10" fill="#64748b">All data is synthetic — for evaluation research only. Not financial advice. No real news. No trading execution.</text>
+  <text x="339" y="517" font-size="10" fill="#64748b">oracle-baseline, noisy-local-model, simple-baseline are demo/sample baselines — not official real-model results.</text>
+  <text x="339" y="533" font-size="10" fill="#64748b">No API keys required. No external model calls. No paid data sources. Fully local and reproducible.</text>
+  <text x="339" y="547" font-size="10" fill="#64748b">Results not statistically meaningful for real model comparison against production datasets.</text>
 
   <!-- ── FOOTER ── -->
-  <rect y="566" width="1100" height="54" fill="#161b22"/>
-  <rect y="566" width="1100" height="1" fill="#30363d"/>
-  <text x="550" y="589" font-size="11" fill="#8b949e" text-anchor="middle">
+  <rect y="566" width="1100" height="54" fill="#0d1320"/>
+  <rect y="566" width="1100" height="2" fill="#1c2840"/>
+  <rect y="566" width="3" height="54" fill="#00d97e"/>
+  <text x="550" y="590" font-size="11" fill="#64748b" text-anchor="middle">
     News2SignalLab v0.1.0 · © 2024-2026 Catalayer AI · Apache-2.0
   </text>
-  <text x="550" y="608" font-size="10" fill="#8b949e" text-anchor="middle">
+  <text x="550" y="608" font-size="10" fill="#64748b" text-anchor="middle">
     Synthetic demo data only · Research only · Not financial advice · No API keys · No real news
   </text>
 

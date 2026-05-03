@@ -5,16 +5,17 @@ from typing import Any
 
 CSS = """
 :root {
-  --bg: #0d1117;
-  --bg2: #161b22;
-  --bg3: #21262d;
-  --border: #30363d;
-  --text: #e6edf3;
-  --text-muted: #8b949e;
-  --accent: #58a6ff;
-  --accent2: #3fb950;
-  --warn: #f85149;
-  --tag-bg: #1f2937;
+  --bg: #080c12;
+  --bg2: #0d1320;
+  --bg3: #141c2e;
+  --border: #1c2840;
+  --text: #e2e8f0;
+  --text-muted: #64748b;
+  --accent: #00d97e;
+  --accent2: #10b981;
+  --warn: #ef4444;
+  --amber: #f59e0b;
+  --tag-bg: #141c2e;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -28,93 +29,99 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 header {
   background: var(--bg2);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   padding: 16px 32px;
   display: flex;
   align-items: center;
   gap: 16px;
 }
-header .logo { font-size: 1.2rem; font-weight: 700; color: var(--text); }
+header .logo { font-size: 1.2rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
 header .logo span { color: var(--accent); }
 header nav { margin-left: auto; display: flex; gap: 24px; }
 header nav a { color: var(--text-muted); font-size: 14px; }
 header nav a:hover { color: var(--text); text-decoration: none; }
 .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
-h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
-h2 { font-size: 1.3rem; font-weight: 600; margin: 28px 0 12px; color: var(--text); }
+h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em; }
+h2 { font-size: 1.15rem; font-weight: 600; margin: 32px 0 12px; color: var(--text); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; color: var(--text-muted); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
 h3 { font-size: 1.05rem; font-weight: 600; margin: 20px 0 8px; }
 p { color: var(--text-muted); margin-bottom: 12px; }
-.subtitle { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 32px; }
+.subtitle { font-size: 1rem; color: var(--text-muted); margin-bottom: 32px; }
 .badge {
   display: inline-block;
   background: var(--tag-bg);
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 2px 8px;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
   margin-right: 6px;
+  letter-spacing: 0.03em;
 }
-.badge.green { color: var(--accent2); border-color: var(--accent2); }
+.badge.green { color: var(--accent); border-color: var(--accent); }
 .badge.blue { color: var(--accent); border-color: var(--accent); }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
+  gap: 1px;
   margin-bottom: 32px;
+  border: 1px solid var(--border);
+  background: var(--border);
 }
 .card {
   background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: none;
   padding: 20px;
 }
-.card .label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
-.card .value { font-size: 2rem; font-weight: 700; color: var(--accent); }
-.card .sub { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
-.links { display: flex; gap: 16px; flex-wrap: wrap; margin: 24px 0; }
+.card .label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.card .value { font-size: 2rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+.card .sub { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.links { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
 .links a {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 10px 20px;
+  border-radius: 2px;
+  padding: 9px 18px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
-.links a:hover { border-color: var(--accent); text-decoration: none; }
+.links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
   margin-bottom: 24px;
+  border: 1px solid var(--border);
 }
 th {
   background: var(--bg3);
-  border: 1px solid var(--border);
-  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 9px 14px;
   text-align: left;
   font-weight: 600;
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
 }
 td {
-  border: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
   padding: 10px 14px;
   color: var(--text);
 }
+tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg3); }
 .rank { font-weight: 700; color: var(--text-muted); }
-.score-high { color: var(--accent2); font-weight: 700; }
-.score-mid { color: var(--accent); font-weight: 600; }
-.score-low { color: #e3b341; font-weight: 600; }
+.score-high { color: var(--accent); font-weight: 700; }
+.score-mid { color: var(--amber); font-weight: 600; }
+.score-low { color: var(--text-muted); font-weight: 500; }
 .disclaimer {
   background: var(--bg2);
   border: 1px solid var(--border);
   border-left: 3px solid var(--warn);
-  border-radius: 6px;
+  border-radius: 0;
   padding: 14px 18px;
   font-size: 13px;
   color: var(--text-muted);
@@ -123,17 +130,19 @@ tr:hover td { background: var(--bg3); }
 .stream-event {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-left: 3px solid var(--border);
+  border-radius: 0;
   padding: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
 }
+.stream-event:hover { border-left-color: var(--accent); }
 .stream-event .evt-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .stream-event .evt-title { font-weight: 600; color: var(--text); }
 .stream-event .evt-meta { font-size: 12px; color: var(--text-muted); }
-.dir-bullish { color: var(--accent2); }
+.dir-bullish { color: var(--accent); }
 .dir-bearish { color: var(--warn); }
 .dir-neutral { color: var(--text-muted); }
-.dir-mixed { color: #e3b341; }
+.dir-mixed { color: var(--amber); }
 footer {
   border-top: 1px solid var(--border);
   padding: 20px 32px;

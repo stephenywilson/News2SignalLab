@@ -1,6 +1,6 @@
 # News2SignalLab by Catalayer
 
-News2SignalLab is a complete local-first lab for financial news-to-signal evaluation. It runs benchmark-style datasets, validates predictions, scores model outputs, generates Markdown reports, builds a static HTML leaderboard, and creates synthetic market-news streams — all without API keys or real market data.
+**News2SignalLab** is a complete local-first lab for financial news-to-signal evaluation. It validates benchmark-style datasets, scores prediction files across four metrics, generates Markdown reports, builds a static HTML leaderboard, and produces synthetic market-news streams — entirely offline, with no API keys and no external dependencies.
 
 > **Research only. Not financial advice. No trading execution. Synthetic demo data only.**
 
@@ -10,19 +10,19 @@ News2SignalLab is a complete local-first lab for financial news-to-signal evalua
 
 ## What is News2SignalLab?
 
-News2SignalLab is an end-to-end local evaluation workflow for the financial news-to-signal task:
+News2SignalLab is a self-contained local evaluation workflow for the financial news-to-signal task:
 
-> Given a financial news headline, predict the expected market direction (bullish/bearish/neutral/mixed), event type, target asset, and time horizon.
+> Given a financial news headline, predict the expected market direction (bullish / bearish / neutral / mixed), event type, target asset, and time horizon.
 
-The lab provides:
+The lab provides the full pipeline in a single CLI:
 
-- A 32-row benchmark-style demo dataset
-- Three example prediction files at different quality levels
-- Scoring across four metrics (direction, event type, asset, time horizon)
-- Markdown score reports with failed-example analysis
-- A static dark-theme HTML leaderboard site
+- A 32-row benchmark-style demo dataset with diverse event types and assets
+- Three example prediction files at calibrated quality levels
+- Transparent scoring across four metrics — direction, event type, asset, time horizon
+- Markdown score reports with metric breakdowns and failed-example analysis
+- A dark-theme static HTML leaderboard site with per-model report pages
 - Five synthetic market-news event stream scenarios
-- A one-command demo that runs everything end-to-end
+- One command (`demo`) that runs the entire pipeline end-to-end
 
 ---
 
@@ -335,12 +335,17 @@ News2SignalLab/
 
 ## Roadmap
 
-| Version | Planned Features |
-|---------|-----------------|
-| 0.2.0 | Multi-dataset support, weighted scoring, CSV export |
-| 0.3.0 | Reasoning quality scoring (deterministic), per-asset breakdown |
-| 0.4.0 | Scenario YAML editor, extended 200+ row dataset |
-| 1.0.0 | Stable API, plugin interface, Docker environment |
+### v0.2 (next)
+- Expand the synthetic dataset beyond the current 32-row demo set
+- Add weighted scoring and CSV score export
+- Improve synthetic stream variety and reduce template repetition
+- Add richer per-metric breakdowns in reports and leaderboard pages
+
+### Future ideas
+- Deterministic reasoning-quality scoring (no judge model)
+- Per-event-type and per-asset analysis drill-downs
+- Scenario YAML editor for custom stream authoring
+- Optional adapter interface for integrating external prediction pipelines
 
 ---
 
