@@ -1,0 +1,10 @@
+{
+  "id": "crypto-policy",
+  "name": "Crypto Policy",
+  "theme": "Cryptocurrency regulatory actions, ETF approvals, and policy developments",
+  "description": "Simulates regulatory and policy events affecting crypto markets, from ETF approvals to enforcement actions.",
+  "primary_assets": ["BTC", "ETH"],
+  "event_type": "crypto_policy",
+  "typical_horizons": ["intraday", "short_term", "medium_term"],
+  "notes": "Synthetic only. Not real regulatory data."
+}

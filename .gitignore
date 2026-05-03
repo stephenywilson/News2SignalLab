@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Generated outputs — run `news2signallab demo` to regenerate
+outputs/*
+!outputs/.gitkeep
+
+# Generated static site — run `news2signallab board` to regenerate
+site/*
+!site/.gitkeep
+
+# Secrets
+*.key
+*.pem
+.env*
+secrets.json

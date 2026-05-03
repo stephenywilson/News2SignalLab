@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "news2signallab"
+version = "0.1.0"
+description = "Complete local lab for financial news-to-signal evaluation, reports, static leaderboards, and synthetic market-news streams."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+keywords = [
+    "financial-news", "market-intelligence", "ai-evaluation",
+    "llm-evaluation", "benchmark", "leaderboard", "synthetic-data"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.scripts]
+news2signallab = "news2signallab.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/stephenywilson/News2SignalLab"
+Repository = "https://github.com/stephenywilson/News2SignalLab"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["news2signallab*"]
+
+[tool.setuptools.package-data]
+news2signallab = ["py.typed"]

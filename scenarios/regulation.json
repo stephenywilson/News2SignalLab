@@ -1,0 +1,10 @@
+{
+  "id": "regulation",
+  "name": "Sector Regulation",
+  "theme": "AI chip export controls, antitrust actions, and sector-specific regulatory announcements",
+  "description": "Simulates regulatory events affecting specific sectors including tech, semiconductors, and financials.",
+  "primary_assets": ["NVDA", "QQQ", "BTC", "SPY"],
+  "event_type": "regulation",
+  "typical_horizons": ["short_term", "medium_term"],
+  "notes": "Synthetic only. Not real regulatory data."
+}

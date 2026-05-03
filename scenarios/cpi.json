@@ -1,0 +1,10 @@
+{
+  "id": "cpi",
+  "name": "Consumer Price Index",
+  "theme": "US and global inflation data releases and market reaction",
+  "description": "Simulates CPI, core inflation, PPI, and PCE data releases with typical asset reactions across equity, gold, bonds, and crypto.",
+  "primary_assets": ["GLD", "SPY", "US10Y", "ETH", "EURUSD"],
+  "event_type": "inflation",
+  "typical_horizons": ["intraday", "short_term", "medium_term"],
+  "notes": "Synthetic only. Not real CPI data."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "fed",
+  "name": "Federal Reserve Policy",
+  "theme": "Federal Reserve interest rate decisions, minutes, and forward guidance",
+  "description": "Simulates events driven by Federal Reserve monetary policy decisions including rate hikes, cuts, holds, and forward guidance shifts.",
+  "primary_assets": ["SPY", "US10Y", "GLD", "EURUSD"],
+  "event_type": "central_bank",
+  "typical_horizons": ["intraday", "short_term", "medium_term"],
+  "notes": "Synthetic only. Not real Fed data."
+}

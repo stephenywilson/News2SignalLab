@@ -1,0 +1,10 @@
+{
+  "id": "earnings",
+  "name": "Corporate Earnings",
+  "theme": "Quarterly earnings results, beats, misses, and guidance changes",
+  "description": "Simulates earnings season events covering major tech and growth companies with varied beat/miss outcomes.",
+  "primary_assets": ["AAPL", "TSLA", "NVDA", "QQQ", "SPY"],
+  "event_type": "earnings",
+  "typical_horizons": ["intraday", "short_term"],
+  "notes": "Synthetic only. Not real earnings data."
+}
