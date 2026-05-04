@@ -20,8 +20,8 @@
   </text>
   <text x="26" y="50" font-size="10" fill="#70818C" letter-spacing="0.14em">BY CATALAYER AI  ·  FINANCIAL NEWS-TO-SIGNAL EVALUATION LAB</text>
 
-  <rect x="892" y="15" width="58" height="22" rx="5" fill="#0D1319" stroke="#1A2229" stroke-width="1"/>
-  <text x="921" y="30" font-size="10" fill="#19D6B0" text-anchor="middle" letter-spacing="0.05em">v0.1.0</text>
+  <rect x="1028" y="17" width="58" height="22" rx="5" fill="#0D1319" stroke="#1A2229" stroke-width="1"/>
+  <text x="1057" y="32" font-size="10" fill="#70818C" text-anchor="middle" letter-spacing="0.05em">v0.1.0</text>
 
 
   <!-- ── LEFT PANEL — y=72, margin-top=14 (58+14=72) ── -->
@@ -107,7 +107,7 @@
   <rect x="324" y="144" width="762" height="38" fill="#05070A"/>
   <text x="351" y="168" font-size="11" font-weight="500" fill="#4F5C61" text-anchor="middle">1</text>
   <text x="380" y="168" font-size="12" fill="#E8EEF2">oracle-baseline</text>
-  <text x="557" y="169" font-size="14" font-weight="700" fill="#19D6B0">97.7%</text>
+  <text x="557" y="168" font-size="14" font-weight="700" fill="#19D6B0">97.7%</text>
   <text x="632" y="168" font-size="12" fill="#A5B4BD">96.9%</text>
   <text x="712" y="168" font-size="12" fill="#A5B4BD">100.0%</text>
   <text x="780" y="168" font-size="12" fill="#A5B4BD">100.0%</text>
@@ -118,7 +118,7 @@
   <rect x="324" y="182" width="762" height="38" fill="#0A0F14"/>
   <text x="351" y="206" font-size="11" font-weight="500" fill="#4F5C61" text-anchor="middle">2</text>
   <text x="380" y="206" font-size="12" fill="#E8EEF2">noisy-local-model</text>
-  <text x="557" y="207" font-size="14" font-weight="700" fill="#D8B34B">78.1%</text>
+  <text x="557" y="206" font-size="14" font-weight="700" fill="#D8B34B">78.1%</text>
   <text x="632" y="206" font-size="12" fill="#A5B4BD">75.0%</text>
   <text x="712" y="206" font-size="12" fill="#A5B4BD">81.2%</text>
   <text x="780" y="206" font-size="12" fill="#A5B4BD">87.5%</text>
@@ -129,7 +129,7 @@
   <rect x="324" y="220" width="762" height="38" fill="#05070A"/>
   <text x="351" y="244" font-size="11" font-weight="500" fill="#4F5C61" text-anchor="middle">3</text>
   <text x="380" y="244" font-size="12" fill="#E8EEF2">simple-baseline</text>
-  <text x="557" y="245" font-size="14" font-weight="600" fill="#70818C">62.5%</text>
+  <text x="557" y="244" font-size="14" font-weight="600" fill="#70818C">62.5%</text>
   <text x="632" y="244" font-size="12" fill="#A5B4BD">59.4%</text>
   <text x="712" y="244" font-size="12" fill="#A5B4BD">62.5%</text>
   <text x="780" y="244" font-size="12" fill="#A5B4BD">78.1%</text>
@@ -144,46 +144,46 @@
 
   <rect x="342" y="300" width="168" height="84" rx="14" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
   <text x="360" y="319" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.14em">DATASET ROWS</text>
-  <text x="360" y="360" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">32</text>
-  <text x="360" y="376" font-size="10" fill="#4F5C61">demo.jsonl</text>
+  <text x="360" y="353" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">32</text>
+  <text x="360" y="372" font-size="10" fill="#4F5C61">demo.jsonl</text>
 
   <rect x="520" y="300" width="168" height="84" rx="14" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
   <text x="538" y="319" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.14em">EVENT TYPES</text>
-  <text x="538" y="360" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">9</text>
-  <text x="538" y="376" font-size="10" fill="#4F5C61">earnings, inflation …</text>
+  <text x="538" y="353" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">9</text>
+  <text x="538" y="372" font-size="10" fill="#4F5C61">earnings, inflation …</text>
 
   <rect x="698" y="300" width="168" height="84" rx="14" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
   <text x="716" y="319" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.12em">ASSETS COVERED</text>
-  <text x="716" y="360" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">10</text>
-  <text x="716" y="376" font-size="10" fill="#4F5C61">SPY, BTC, AAPL …</text>
+  <text x="716" y="353" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">10</text>
+  <text x="716" y="372" font-size="10" fill="#4F5C61">SPY, BTC, AAPL …</text>
 
   <rect x="876" y="300" width="168" height="84" rx="14" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
   <text x="894" y="319" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.10em">API KEYS REQUIRED</text>
-  <text x="894" y="360" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">0</text>
-  <text x="894" y="376" font-size="10" fill="#4F5C61">fully offline</text>
+  <text x="894" y="353" font-size="30" font-weight="600" fill="#19D6B0" letter-spacing="-0.02em">0</text>
+  <text x="894" y="372" font-size="10" fill="#4F5C61">fully offline</text>
 
   <!-- ECOSYSTEM -->
   <line x1="342" y1="400" x2="1070" y2="400" stroke="#1A2229" stroke-width="1"/>
   <text x="342" y="416" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.18em">ECOSYSTEM</text>
 
-  <rect x="342" y="424" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
-  <text x="358" y="449" font-size="11" font-weight="600" fill="#E8EEF2">News2SignalBench</text>
-  <text x="358" y="463" font-size="10" fill="#70818C">Benchmark foundation</text>
-  <text x="358" y="476" font-size="9" fill="#4F5C61">dataset format + evaluation contracts</text>
+  <rect x="342" y="427" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
+  <text x="358" y="452" font-size="11" font-weight="600" fill="#E8EEF2">News2SignalBench</text>
+  <text x="358" y="466" font-size="10" fill="#70818C">Benchmark foundation</text>
+  <text x="358" y="479" font-size="9" fill="#4F5C61">dataset format + evaluation contracts</text>
 
-  <text x="537" y="461" font-size="13" fill="#242E34" text-anchor="middle">→</text>
+  <text x="537" y="464" font-size="13" fill="#242E34" text-anchor="middle">→</text>
 
-  <rect x="554" y="424" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
-  <text x="570" y="449" font-size="11" font-weight="600" fill="#E8EEF2">SignalEvalRunner</text>
-  <text x="570" y="463" font-size="10" fill="#70818C">Standalone runner</text>
-  <text x="570" y="476" font-size="9" fill="#4F5C61">scoring primitives · any pipeline</text>
+  <rect x="554" y="427" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
+  <text x="570" y="452" font-size="11" font-weight="600" fill="#E8EEF2">SignalEvalRunner</text>
+  <text x="570" y="466" font-size="10" fill="#70818C">Standalone runner</text>
+  <text x="570" y="479" font-size="9" fill="#4F5C61">scoring primitives · any pipeline</text>
 
-  <text x="749" y="461" font-size="13" fill="#242E34" text-anchor="middle">→</text>
+  <text x="749" y="464" font-size="13" fill="#242E34" text-anchor="middle">→</text>
 
-  <rect x="766" y="424" width="258" height="66" rx="8" fill="#061612" stroke="#19D6B0" stroke-width="1"/>
-  <text x="782" y="449" font-size="11" font-weight="700" fill="#19D6B0">News2SignalLab</text>
-  <text x="782" y="463" font-size="10" fill="#A5B4BD">Complete integrated lab</text>
-  <text x="782" y="476" font-size="9" fill="#70818C">demo · score · report · board · stream</text>
+  <rect x="766" y="427" width="258" height="66" rx="8" fill="#061612" stroke="#19D6B0" stroke-width="1"/>
+  <text x="782" y="452" font-size="11" font-weight="700" fill="#19D6B0">News2SignalLab</text>
+  <text x="782" y="466" font-size="10" fill="#A5B4BD">Complete integrated lab</text>
+  <text x="782" y="479" font-size="9" fill="#70818C">demo · score · report · board · stream</text>
 
   <!-- RESEARCH NOTICE -->
   <rect x="324" y="506" width="762" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
