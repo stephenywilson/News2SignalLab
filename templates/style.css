@@ -46,7 +46,7 @@ header nav { margin-left: auto; display: flex; gap: 24px; }
 header nav a { color: var(--text-muted); font-size: 13px; letter-spacing: 0.01em; }
 header nav a:hover { color: var(--text); text-decoration: none; }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 28px; }
 
 h2 {
   font-size: 11px;

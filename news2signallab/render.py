@@ -42,7 +42,7 @@ header .logo span { color: var(--accent); }
 header nav { margin-left: auto; display: flex; gap: 24px; }
 header nav a { color: var(--text-muted); font-size: 13px; letter-spacing: 0.01em; }
 header nav a:hover { color: var(--text); text-decoration: none; }
-.container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 32px 28px; }
 h1 { font-size: 1.85rem; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.02em; }
 h2 {
   font-size: 11px;
@@ -90,10 +90,10 @@ p { color: var(--text-dim); margin-bottom: 12px; }
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .card .value { font-size: 28px; font-weight: 600; color: var(--accent); letter-spacing: -0.02em; line-height: 1.1; }
-.card .sub { font-size: 12px; color: var(--text-faint); margin-top: 4px; }
+.card .sub { font-size: 12px; color: var(--text-faint); margin-top: 6px; }
 .links { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
 .links a {
   background: var(--bg2);
@@ -492,7 +492,7 @@ def render_streams_page(
 {events_html}
 
 <h2>CLI Usage</h2>
-<pre style="background:var(--bg2);border:1px solid var(--border);border-radius:6px;padding:16px;font-size:13px;overflow-x:auto">
+<pre style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px;font-size:13px;overflow-x:auto">
 news2signallab stream --scenario fed --count 20 --output outputs/streams/fed-stream.jsonl
 news2signallab stream --scenario cpi --count 15 --output outputs/streams/cpi-stream.jsonl
 news2signallab stream --scenario earnings --count 10 --output outputs/streams/earnings-stream.jsonl
