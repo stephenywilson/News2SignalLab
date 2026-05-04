@@ -23,8 +23,6 @@
   <rect x="892" y="15" width="58" height="22" rx="5" fill="#0D1319" stroke="#1A2229" stroke-width="1"/>
   <text x="921" y="30" font-size="10" fill="#19D6B0" text-anchor="middle" letter-spacing="0.05em">v0.1.0</text>
 
-  <rect x="960" y="15" width="96" height="22" rx="5" fill="#0D1319" stroke="#1A2229" stroke-width="1"/>
-  <text x="1008" y="30" font-size="10" fill="#30E2BF" text-anchor="middle" letter-spacing="0.04em">Apache-2.0</text>
 
   <!-- ── LEFT PANEL — y=72, margin-top=14 (58+14=72) ── -->
   <rect x="14" y="72" width="296" height="506" rx="14" fill="#0A0F14" stroke="#1A2229" stroke-width="1"/>
@@ -169,29 +167,28 @@
   <text x="342" y="416" font-size="10" font-weight="500" fill="#70818C" letter-spacing="0.18em">ECOSYSTEM</text>
 
   <rect x="342" y="424" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
-  <text x="358" y="442" font-size="11" font-weight="600" fill="#E8EEF2">News2SignalBench</text>
-  <text x="358" y="458" font-size="10" fill="#70818C">Benchmark foundation</text>
-  <text x="358" y="472" font-size="9" fill="#4F5C61">dataset format + evaluation contracts</text>
+  <text x="358" y="449" font-size="11" font-weight="600" fill="#E8EEF2">News2SignalBench</text>
+  <text x="358" y="463" font-size="10" fill="#70818C">Benchmark foundation</text>
+  <text x="358" y="476" font-size="9" fill="#4F5C61">dataset format + evaluation contracts</text>
 
-  <text x="537" y="460" font-size="13" fill="#242E34" text-anchor="middle">→</text>
+  <text x="537" y="461" font-size="13" fill="#242E34" text-anchor="middle">→</text>
 
   <rect x="554" y="424" width="188" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
-  <text x="570" y="442" font-size="11" font-weight="600" fill="#E8EEF2">SignalEvalRunner</text>
-  <text x="570" y="458" font-size="10" fill="#70818C">Standalone runner</text>
-  <text x="570" y="472" font-size="9" fill="#4F5C61">scoring primitives · any pipeline</text>
+  <text x="570" y="449" font-size="11" font-weight="600" fill="#E8EEF2">SignalEvalRunner</text>
+  <text x="570" y="463" font-size="10" fill="#70818C">Standalone runner</text>
+  <text x="570" y="476" font-size="9" fill="#4F5C61">scoring primitives · any pipeline</text>
 
-  <text x="749" y="460" font-size="13" fill="#242E34" text-anchor="middle">→</text>
+  <text x="749" y="461" font-size="13" fill="#242E34" text-anchor="middle">→</text>
 
   <rect x="766" y="424" width="258" height="66" rx="8" fill="#061612" stroke="#19D6B0" stroke-width="1"/>
-  <rect x="766" y="424" width="3" height="66" rx="2" fill="#19D6B0"/>
-  <text x="784" y="442" font-size="11" font-weight="700" fill="#19D6B0">News2SignalLab</text>
-  <text x="784" y="458" font-size="10" fill="#A5B4BD">Complete integrated lab</text>
-  <text x="784" y="472" font-size="9" fill="#70818C">demo · score · report · board · stream</text>
+  <text x="782" y="449" font-size="11" font-weight="700" fill="#19D6B0">News2SignalLab</text>
+  <text x="782" y="463" font-size="10" fill="#A5B4BD">Complete integrated lab</text>
+  <text x="782" y="476" font-size="9" fill="#70818C">demo · score · report · board · stream</text>
 
   <!-- RESEARCH NOTICE -->
-  <rect x="324" y="506" width="762" height="62" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
-  <text x="342" y="524" font-size="9" font-weight="600" fill="#70818C" letter-spacing="0.16em">RESEARCH NOTICE</text>
-  <text x="342" y="539" font-size="10" fill="#4F5C61">Synthetic demo data only. Not real news or financial advice. No trading execution.</text>
-  <text x="342" y="554" font-size="10" fill="#4F5C61">No API keys, no provider calls. Example baselines are not official real-model results.</text>
+  <rect x="324" y="506" width="762" height="66" rx="8" fill="#05070A" stroke="#1A2229" stroke-width="1"/>
+  <text x="342" y="527" font-size="9" font-weight="600" fill="#70818C" letter-spacing="0.16em">RESEARCH NOTICE</text>
+  <text x="342" y="542" font-size="10" fill="#4F5C61">Synthetic demo data only. Not real news or financial advice. No trading execution.</text>
+  <text x="342" y="557" font-size="10" fill="#4F5C61">No API keys, no provider calls. Example baselines are not official real-model results.</text>
 
 </svg>
